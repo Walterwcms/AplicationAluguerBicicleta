@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    android:fillViewport="true">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
+
+
+        <ImageView
+            android:id="@+id/iv2"
+            android:layout_width="346dp"
+            android:layout_height="210dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@mipmap/qrcode" />
+
+        <Button
+            android:id="@+id/bt1"
+            android:layout_width="223dp"
+            android:layout_height="73dp"
+            android:layout_marginTop="8dp"
+            android:onClick="VerDetalhesBicicleta"
+            android:text="Ver Detalhes Bicicleta"
+            app:layout_constraintEnd_toEndOf="@+id/iv2"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="@+id/iv2"
+            app:layout_constraintTop_toBottomOf="@+id/iv2" />
+
+        <ImageView
+            android:id="@+id/iv3"
+            android:layout_width="337dp"
+            android:layout_height="210dp"
+            android:layout_marginTop="160dp"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintEnd_toEndOf="@+id/bt1"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bt1"
+            app:srcCompat="@mipmap/localizacao" />
+
+        <Button
+            android:id="@+id/bt2"
+            android:layout_width="223dp"
+            android:layout_height="73dp"
+            android:layout_marginTop="8dp"
+            android:onClick="Visualizar_estacoes_bicicletas"
+            android:text="Visualizar Estações Bicicleta"
+            app:layout_constraintEnd_toEndOf="@+id/iv3"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="@+id/iv3"
+            app:layout_constraintTop_toBottomOf="@+id/iv3" />
+
+        <ImageView
+            android:id="@+id/iv4"
+            android:layout_width="348dp"
+            android:layout_height="185dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintEnd_toEndOf="@+id/bt2"
+            app:layout_constraintHorizontal_bias="0.054"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bt2"
+            app:srcCompat="@mipmap/historico" />
+
+        <Button
+            android:id="@+id/bt3"
+            android:layout_width="223dp"
+            android:layout_height="73dp"
+            android:onClick="alugarBike"
+            android:text="Alugar uma     Bicicleta"
+            app:layout_constraintEnd_toEndOf="@+id/iv4"
+            app:layout_constraintStart_toStartOf="@+id/iv4"
+            app:layout_constraintTop_toBottomOf="@+id/iv4" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
